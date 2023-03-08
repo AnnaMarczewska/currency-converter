@@ -6,7 +6,7 @@ let resultElement = document.querySelector (".js-result");
 
 let EURrate = 4.74;
 let CHFrate = 4.81;
-let GBRrate = 5.34;
+let GBPrate = 5.34;
 let USDrate = 4.44;
 
 formElement.addEventListener("submit", (event) => {
@@ -23,13 +23,13 @@ formElement.addEventListener("submit", (event) => {
         case "CHF":
             result = amount / CHFrate;
             break;
-        case "GBR":
-            result = amount / GBRrate;
+        case "GBP":
+            result = amount / GBPrate;
             break;
         case "USD":
             result = amount / USDrate;
             break;
                 
     }
-    resultElement.innerText = `${result.toFixed(2)} ${currency}`
+    resultElement.innerText = `${result.toFixed(2)} ${currency}`;
 });
