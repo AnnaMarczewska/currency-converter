@@ -1,7 +1,8 @@
 .element {
     resize: both;
     overflow: auto;
-    background-image: url("../images/dolary.png");
-    background-position: center;
+    background-image: url("../images/money.png");
+    background-position:center;
+    background-size: cover;
 }
 
